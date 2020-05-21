@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="org.dwivedi.listeners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="/Users/neelima/GitHome/TestNGProject/src/test/java/org.dwivedi.listeners.ListenerTest(failed)">
+    <classes>
+      <class name="org.dwivedi.testng.SkipExceptionTest">
+        <methods>
+          <include name="skipTest"/>
+        </methods>
+      </class> <!-- org.dwivedi.testng.SkipExceptionTest -->
+      <class name="org.dwivedi.listeners.ListenerTest">
+        <methods>
+          <include name="testCase3"/>
+        </methods>
+      </class> <!-- org.dwivedi.listeners.ListenerTest -->
+    </classes>
+  </test> <!-- /Users/neelima/GitHome/TestNGProject/src/test/java/org.dwivedi.listeners.ListenerTest(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE html>-->
+<!---
+this is an html comment
+-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.dwivedi.listeners.CustomListeners"/>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="/Users/neelima/GitHome/TestNGProject/src/test/java/org.dwivedi.listeners.ListenerTest">
+        <classes>
+            <class name="org.dwivedi.dependsOn.DependsOnMethodsTestCase"></class>
+            <class name="org.dwivedi.listeners.ListenerTest"></class>
+            <class name="org.dwivedi.testng.SkipExceptionTest">
+                <methods>
+                    <include name="skipTest"/>
+                    <include name="nonSkipTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
